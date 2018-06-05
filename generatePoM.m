@@ -30,7 +30,7 @@ function PoM = generatePoM(model, CL, numBeats, popSize, lowMult, highMult)
 % license (https://creativecommons.org/licenses/by-sa/4.0/)
 
 
-addpath('models','func')
+addpath('models','fun')
 
 % Choose variables depending on the model to be solved
 if model == 1
@@ -59,6 +59,11 @@ end
 
 if isempty(gcp('nocreate'))
     parpool();
+end
+
+% Temporary directory to save PoM pieces
+if isempty(dir('myPoM'))
+    mkdir('myPoM')
 end
 
 parfor_progress(numIt);
@@ -108,7 +113,6 @@ for i = 1 : numIt
     for j = 1 : length(CL) % Loop through the cycle lengths to check that all are physiological
         if ~isPhysio(var{1}{j},var{2}{j},var{4}(j))
             allPhysio = false;
-            break
         end
     end
     
@@ -122,3 +126,5 @@ for i = 1 : numIt
     end
     delete(['myPoM/PoM' num2str(i) '.mat']);
 end
+
+rmdir('myPoM')
