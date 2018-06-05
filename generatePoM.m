@@ -1,8 +1,7 @@
 function PoM = generatePoM(model, CL, numBeats, popSize, lowMult, highMult)
 % PoM = generatePoM(model, CL, numBeats, popSize)
 %
-% This function creates a population of models using latin hypercube 
-% sampling and saves it. 
+% Create a population of models using latin hypercube sampling. 
 %
 % Inputs:
 %   model = 1 (ORd) or 2 (TP06)
