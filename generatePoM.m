@@ -29,7 +29,7 @@ function PoM = generatePoM(model, CL, numBeats, popSize, lowMult, highMult)
 % license (https://creativecommons.org/licenses/by-sa/4.0/)
 
 
-addpath('models','fun')
+addpath('models','func')
 
 % Choose variables depending on the model to be solved
 if model == 1
