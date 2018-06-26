@@ -126,4 +126,6 @@ for i = 1 : numIt
     delete(['myPoM/PoM' num2str(i) '.mat']);
 end
 
+delete(gcp);
+
 rmdir('myPoM')
