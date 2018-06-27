@@ -3,9 +3,7 @@ Populations of models for cardiac electrophysiology
 
 Use the MATLAB function generatePoM() to create a population of cardiac electrophysiology models (POM) using either the ORd or the TP06 model. The POM can then be calibrated to some experimental data by using the calibratePoM() function. Details on using the generation and calibration functions, as well as how to save the data, can be found in the functions' documentation. To understand what are POM and experimentally-calibrated POM, please read the paper cited at the end of this file.
 
-Three sample activation-recovery interval data are provided in the ARIdata folder. These data have been acquired as explained in the paper mentioned at the end of this file. Any use of these data and functions must cite that paper; check this repository regularly, as more papers, which must also be cited, are being prepared.
-
-More population-based analyses to come....
+Three sample activation-recovery interval data are provided in the ARIdata folder. These data have been acquired as explained in the paper mentioned at the end of this file. Any use of these data and functions must cite that paper; check this repository regularly, as more papers, which must also be cited, are being prepared. An example of use of the functions presented here is provided in POManalysisExample.m. This is a script that follows the methodology explained in the paper to obtain cellular-level insight from organ-level measurements.
 
 All the functions contained in this repository were developed in the Multiscale Cardiovascular Engineering Group at University College London (MUSE-UCL) by Carlos Ledezma.
 
