@@ -25,6 +25,8 @@
 % electrophysiology" (2018). ASME Journal of Engineering and Science in
 % Medical Diagnostics and Therapy. doi: 10.1115/1.4040589.
 
+addpath('func');
+
 % Names of TP06 parameters
 paramNames = {'Gna','Gto','Gks','Gkr','Gk1','Pnak','Gcal','knaca','Gpca','Gpk','Gbna','Gbca'};
 
